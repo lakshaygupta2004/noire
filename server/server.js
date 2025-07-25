@@ -9,7 +9,9 @@ require('dotenv').config();
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://noire-chi.vercel.app/',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }
 ));
 app.use(express.json());
