@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import ModelViewer from "../../../ReactBits/ModelViewer/ModelViewer";
 import "../../styles/hero.css";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const textRef = useRef(null);
@@ -27,7 +28,9 @@ const Hero = () => {
         <div className="hero-text" ref={textRef}>
           <h1>Luxury Redefined</h1>
           <p>Discover the elegance of NOIRÉ fragrances—crafted to perfection.</p>
-          <button className="hero-button">Explore Now</button>
+          <Link to="/Collections">
+            <button className="hero-button">Explore Now</button>
+          </Link>
         </div>
         <div className="hero-model" ref={modelRef}>
           <ModelViewer
