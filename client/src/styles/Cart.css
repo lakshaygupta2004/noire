@@ -1,0 +1,116 @@
+.cart-page {
+    padding: 3rem 2rem;
+    color: white;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #111, #000);
+  }
+  
+  .cart-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #8F6A35;
+    font-weight: bold;
+    text-shadow: 0 0 10px #8F6A35aa;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    gap: 1rem;
+    backdrop-filter: blur(6px);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cart-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #8F6A35;
+  }
+  
+  .cart-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cart-details p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .remove-btn {
+    background: transparent;
+    border: none;
+    color: #ff5555;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .remove-btn:hover {
+    color: #ff2222;
+  }
+  
+  .buy-now-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #8F6A35;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #a37f4f;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #aaa;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .buy-now-btn {
+      width: 100%;
+    }
+  }
+  

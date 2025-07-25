@@ -1,0 +1,35 @@
+.product-grid-section {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .product-grid-title {
+    margin-top: 30px;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #8F6A35;
+    font-weight: bold;
+    text-shadow: 0 0 10px #8F6A35aa;
+  }
+
+.flowing-menu-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .flowing-menu-wrapper {
+    height: 300px;
+  }
+  .product-grid-title {
+    font-size: 2rem;
+  }
+}
+  

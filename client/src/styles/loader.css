@@ -1,0 +1,53 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  color: #8F6A35;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 200px;
+  height: 6px;
+  background: #222;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #8F6A35;
+  transition: width 0.2s ease;
+}
+
+/* Medium Screens */
+@media (min-width: 768px) {
+  .logo {
+    font-size: 3.5rem;
+  }
+  .progress-bar {
+    height: 8px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .logo {
+    font-size: 4rem;
+  }
+  .progress-bar {
+    max-width: 400px;
+  }
+} 

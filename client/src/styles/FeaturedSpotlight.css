@@ -1,0 +1,108 @@
+.spotlight-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 80px 20px;
+  background: #000;
+}
+  
+  .spotlight-overlay {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .spotlight-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #8F6A35;
+    font-weight: bold;
+    text-shadow: 0 0 10px #8F6A35aa;
+  }
+  
+  .spotlight-products {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .spotlight-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid #8F6A3533;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    box-shadow: 0 0 25px #8F6A35bb;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .spotlight-card:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15) drop-shadow(0 0 16px #FFD966);
+    box-shadow: 0 6px 16px #FFD966, 0 0 16px #FFB700 inset;
+  }
+  
+  .spotlight-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .spotlight-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+  }
+  
+  .spotlight-content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .spotlight-content p {
+    color: #ccc;
+    font-size: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .spotlight-products {
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
+    }
+    .spotlight-card {
+      width: 100%;
+      max-width: 400px;
+      margin: 0;
+    }
+  }
+  
+@media (max-width: 600px) {
+  .spotlight-card {
+    max-width: 90vw;
+    padding: 12px;
+  }
+  .spotlight-content h3 {
+    font-size: 1.2rem;
+  }
+  .spotlight-content p {
+    font-size: 0.95rem;
+  }
+}
+  

@@ -1,0 +1,91 @@
+.testimonials-section {
+    padding: 2rem 2rem;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonials-title {
+    top: 0;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #8F6A35;
+    font-weight: bold;
+    text-shadow: 0 0 10px #8F6A35aa;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .testimonial-card {
+    border-radius: 1.25rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    background-size: 200% 200%;
+    transition: transform 0.3s ease;
+    border: 1.5px solid transparent;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(143, 106, 53, 0.15);
+    backdrop-filter: blur(4px);
+  }
+  
+  .testimonial-card:hover {
+    border-color: #8F6A35;
+    animation: shine 3s linear infinite;
+  }
+  
+  .testimonial-content {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .testimonial-feedback {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #f2f2f2;
+  }
+  
+  .testimonial-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8F6A35;
+  }
+  
+  /* Optional: hover shine animation */
+  @keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .testimonials-title {
+      font-size: 2rem;
+    }
+  
+    .testimonial-feedback {
+      font-size: 1rem;
+    }
+  
+    .testimonial-card {
+      padding: 1.5rem 1.5rem;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.auth-lightrays-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.light-rays-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  pointer-events: none;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.auth-page {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,179 @@
+/* Global Hero Section */
+.hero-section {
+  position: relative;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.hero-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(143, 106, 53, 0.3);
+}
+
+.hero-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #8F6A35;
+  letter-spacing: 1px;
+}
+
+/* Nav Link Styles */
+.hero-nav-link {
+  color: #8F6A35;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+.hero-nav-link:hover,
+.hero-nav-link:focus {
+  color: #b08a4a;
+  border-bottom: 2px solid #b08a4a;
+  outline: none;
+}
+
+/* Remove GooeyNav-specific styles if any remain */
+/* (No .gooey-nav-list or similar present) */
+
+/* Cart Icon */
+.hero-cart .cart-icon {
+  font-size: 1.6rem;
+  color: #8F6A35;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-cart .cart-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  gap: 2.5rem;
+  min-height: 80vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #8F6A35;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 4px rgba(143, 106, 53, 0.9);
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero-button {
+  background-color: #8F6A35;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(143, 106, 53, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: #a17947;
+  transform: translateY(-2px);
+}
+
+/* Model Viewer */
+.hero-model {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Ensure no padding */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.model-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+  .hero-nav-center.desktop {
+    display: flex;
+  }
+  .hero-content {
+    flex-direction: row;
+    gap: 5rem;
+    padding: 4rem 3rem;
+  }
+  .hero-text {
+    text-align: left;
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+  .hero-text p {
+    font-size: 1.125rem;
+  }
+}
+
+/* Show mobile toggle and hide desktop nav on small */
+@media (max-width: 768px) {
+  .hero-nav-center.desktop {
+    display: none;
+  }
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #8F6A35;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+}

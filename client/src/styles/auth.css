@@ -1,0 +1,125 @@
+/* Full screen container */
+/* Base container */
+.auth-page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #000; /* fallback background */
+}
+
+/* LightRays background */
+.light-rays-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Main auth content wrapper */
+.auth-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Left and right sections full width on mobile */
+.auth-left,
+.auth-right {
+  width: 100%;
+  position: relative;
+}
+
+/* 3D model container */
+.model-canvas {
+  width: 100%;
+  height: 300px;
+  border-radius: 1rem;
+  background: #111;
+  box-shadow: 0 0 20px #8f6a35aa;
+}
+
+/* Auth form box */
+.form-box {
+  background: rgba(255 255 255 / 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #8f6a35aa;
+  text-align: center;
+}
+
+/* Auth form inputs */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.auth-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #111;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #8f6a35;
+  color: #fff;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #a57f45;
+}
+
+/* Toggle link below form */
+.toggle-mode {
+  margin-top: 1rem;
+  color: #8f6a35;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Error message */
+.error {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+}
+
+/* Medium screens and up: side-by-side layout */
+@media (min-width: 768px) {
+  .auth-container {
+    flex-direction: row;
+  }
+
+  .auth-left,
+  .auth-right {
+    width: 50%;
+  }
+
+  .model-canvas {
+    height: 400px;
+  }
+}
