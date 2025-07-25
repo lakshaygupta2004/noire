@@ -24,7 +24,7 @@
 
 ---
 
-## 🔗 Live Demo (Live Link Coming Soon)
+## 🔗 Live Demo (https://noire-chi.vercel.app/)
 
 
 ## ✨ About NOIRÉ
