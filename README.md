@@ -2,7 +2,7 @@
 # NOIRÉ - Luxury Perfume Brand Website
 
 <p align="center">
-  <img src="../noire/client/public/assets/Noire.png" alt="NOIRÉ Logo" width="100" />
+  <img src="https://raw.githubusercontent.com/lakshaygupta2004/noire/main/public/Noire.png" alt="NOIRÉ Logo" width="100" />
 </p>
 
 <p align="center">
