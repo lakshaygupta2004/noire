@@ -7,25 +7,33 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Products from './pages/Products';
 import About from './pages/About';
 import Cart from './pages/Cart';
-import Navbar from './components/Navbar'; // ✅
+import Navbar from './components/Navbar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
+import SplashCursor from '../ReactBits/SplashCursor/SplashCursor';
+import lenis from 'lenis';
 
 function App() {
   const [loadingComplete, setLoadingComplete] = useState(false);
   const location = useLocation();
 
+  const isAuthPage = location.pathname === '/auth';
+
   return (
     <CartProvider>
       <ToastContainer position="top-right" autoClose={2000} />
+
       {!loadingComplete ? (
         <Loader onComplete={() => setLoadingComplete(true)} />
       ) : (
         <>
-          {/* Only show Navbar on pages other than /auth */}
-          {location.pathname !== '/auth' && <Navbar />}
+          {/* 🟡 Show SplashCursor on all pages except /auth */}
+          {!isAuthPage && <SplashCursor />}
+
+          {/* 🟡 Show Navbar on all pages except /auth */}
+          {!isAuthPage && <Navbar />}
 
           <Routes>
             <Route
