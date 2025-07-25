@@ -15,7 +15,7 @@ const images = [
   "/assets/Products/SuvageMyctique.jpg",
   "/assets/Products/PartumCollection.jpg",
   "/assets/Products/SoleifFroid.jpg",
-  "/assets/Products/NoieAbsolu.jpg",
+  "/assets/Products/NoirAbsolu.jpg",
 ];
 
 const Collections = () => {
