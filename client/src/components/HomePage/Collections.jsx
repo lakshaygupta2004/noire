@@ -3,7 +3,7 @@ import React from 'react';
 import ImageTrail from '../../../ReactBits/ImageTrail/ImageTrail';
 import '../../../ReactBits/ImageTrail/ImageTrail.css';
 import '../../styles/Collection.css';
-import Carousel from '../../assets/Product_Carousel/Carousel.png';
+import Carousel from '../../assets/Product_Carousel/carousel.png';
 
 const images = [
   "/assets/Products/CelesteEmber.jpg",
